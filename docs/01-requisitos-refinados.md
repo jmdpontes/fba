@@ -8,7 +8,7 @@
 | Documento de origem | Termo de Referência para Cotação — Plataforma Tecnológica do Observatório FBA (Goiânia/GO, 2026) |
 | Finalidade deste documento | Refinar o TR em requisitos verificáveis, registrar premissas e decisões de escopo e servir de base técnica para a proposta comercial (Anexo I da Proposta Comercial NatGED) |
 | Versão | 0.1 |
-| Data | 24/09/2026 |
+| Data | 25/09/2026 |
 
 ---
 
@@ -549,18 +549,16 @@ flowchart LR
 
 ## 8. Serviços de terceiros e custos recorrentes
 
-Estimativa a confirmar na proposta comercial (valores mensais aproximados, câmbio a definir):
+Valores mensais estimados. Os serviços de nuvem estão incluídos no item 18 da proposta comercial (Hospedagem cloud, R$ 1.300,00/mês), sujeito à revisão cambial prevista nas condições comerciais.
 
 | Serviço | Fornecedor sugerido | Natureza | Custo estimado | Observação |
 |---|---|---|---|---|
-| Computação (app + worker) | AWS (ECS/Lightsail) ou equivalente | Nuvem | a cotar | Produção + homologação |
-| Banco PostgreSQL gerenciado | AWS RDS | Nuvem | a cotar | Com backup automatizado |
-| Storage de objetos + backup | AWS S3 | Nuvem | baixo (≥ 10 GB) | — |
-| CDN / WAF | Cloudflare (plano gratuito/Pro) | Nuvem | R$ 0 – baixo | — |
-| E-mail transacional | Amazon SES / Brevo | Nuvem | baixo | Volume estimado < 10 mil e-mails/mês |
+| Computação (app + worker), banco PostgreSQL gerenciado, Redis, storage de objetos, balanceador | AWS (região São Paulo) ou equivalente | Nuvem | até R$ 1.100,00/mês | Produção + homologação; banco com backup automatizado |
+| CDN / WAF | Cloudflare (plano gratuito/Pro) | Nuvem | até R$ 120,00/mês | — |
+| E-mail transacional | Amazon SES / Brevo | Nuvem | até R$ 80,00/mês | Volume estimado < 10 mil e-mails/mês |
 | Mapas (tiles) | OpenStreetMap / provedor gratuito | Terceiro | R$ 0 | Uso sob política de uso justo; alternativa: tiles próprios |
 | Geocodificação | Nominatim | Terceiro | R$ 0 | Baixo volume, com ajuste manual |
-| Monitoramento de erros | Sentry (plano gratuito/Team) | Terceiro | R$ 0 – baixo | — |
+| Monitoramento de erros | Sentry (plano gratuito) | Terceiro | R$ 0 | Incluído no item 19 (Backup e segurança) |
 | Domínio | Registro.br | FBA | ~R$ 40/ano | Titularidade da FBA |
 | Certificado SSL | Let's Encrypt / AWS ACM | — | R$ 0 | — |
 | VLibras | Gov.br | — | R$ 0 | — |
