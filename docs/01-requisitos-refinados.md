@@ -5,9 +5,9 @@
 |---|---|
 | Contratante | Federal Brasil Automobilidade Global – FBA Global (CNPJ 57.850.031/0001-59) |
 | Proponente | NatGED |
-| Documento de origem | Termo de Referência para Cotação — Plataforma Tecnológica do Observatório FBA (Goiânia/GO, 2026) — [`referencia/`](referencia/) |
-| Finalidade deste documento | Refinar o TR em requisitos verificáveis, registrar premissas e decisões de escopo e servir de base para a proposta comercial (preço de referência) |
-| Versão | 0.1 — rascunho para discussão interna |
+| Documento de origem | Termo de Referência para Cotação — Plataforma Tecnológica do Observatório FBA (Goiânia/GO, 2026) |
+| Finalidade deste documento | Refinar o TR em requisitos verificáveis, registrar premissas e decisões de escopo e servir de base técnica para a proposta comercial (Anexo I da Proposta Comercial NatGED) |
+| Versão | 0.1 |
 | Data | 24/09/2026 |
 
 ---
@@ -83,7 +83,7 @@ A solução é composta por quatro frentes que compartilham uma única base de d
 
 ## 2. Premissas e decisões de escopo
 
-Estas premissas resolvem ambiguidades do TR e **delimitam o preço**. Devem constar da proposta comercial.
+Estas premissas resolvem ambiguidades do TR e **delimitam o escopo e o preço** da proposta.
 
 | ID | Premissa | Justificativa / origem |
 |---|---|---|
@@ -105,7 +105,7 @@ Estas premissas resolvem ambiguidades do TR e **delimitam o preço**. Devem cons
 | P-16 | Autenticação por e-mail + senha, com 2FA (TOTP) **obrigatório** para perfis FBA e **opcional** para organizações. Login Gov.br é opcional (O-06). | TR §7.1 |
 | P-17 | Navegadores suportados: duas últimas versões de Chrome, Edge, Firefox e Safari (desktop e mobile). | TR §7.4 |
 | P-18 | Ambientes: **homologação** e **produção**. | Boa prática |
-| P-19 | Proposta com **preço de referência**: escopo completo do TR, sem cortes, com opcionais separados. | Posição comercial NatGED |
+| P-19 | Proposta **integral** ao escopo do TR, sem exclusões, com serviços opcionais apresentados em seção separada. | TR §15 e §18 — comparabilidade entre fornecedores |
 
 ---
 
@@ -638,32 +638,7 @@ Atrasos da FBA nas dependências deslocam o cronograma na mesma proporção.
 
 Cronograma proposto em **24 semanas** até a produção. Ele ajusta a referência do TR (22 semanas), cuja fase 4 concentrava cinco módulos em 2 semanas. Aqui, os módulos analíticos avançam em paralelo ao desenvolvimento base.
 
-```mermaid
-gantt
-    title Cronograma de referência (semanas)
-    dateFormat  X
-    axisFormat  %s
-    section Descoberta
-    Requisitos, arquitetura da informação, catálogo de indicadores :d1, 0, 4
-    section UX/UI
-    Wireframes e protótipo navegável            :d2, 3, 5
-    Homologação do protótipo                    :milestone, 8, 0
-    section Desenvolvimento
-    Fundação (infra, auth, perfis, auditoria)   :d3, 6, 3
-    Organizações, projetos, eventos, workflow    :d4, 8, 7
-    Portal público + CMS                         :d5, 10, 6
-    Mapa e calendário                            :d6, 13, 4
-    Formulários e evidências                     :d7, 13, 5
-    Dashboards, relatórios e exportações         :d8, 15, 5
-    section Qualidade
-    Testes funcionais, segurança, acessibilidade, carga :d9, 19, 3
-    Homologação FBA e correções                  :d10, 20, 2
-    section Implantação
-    Produção, carga inicial, treinamentos        :d11, 22, 2
-    Aceite definitivo                            :milestone, 24, 0
-    section Operação
-    Operação assistida (24 meses)                :d12, 24, 4
-```
+![Cronograma de referência](img/cronograma.png)
 
 | Fase | Semanas | Entregáveis (TR §10) | Marco de aceite |
 |---|---|---|---|
