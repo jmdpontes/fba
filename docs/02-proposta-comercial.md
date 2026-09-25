@@ -57,16 +57,17 @@ Justificativa do banco relacional (TR §8): os dados do Observatório são forte
 
 | Papel | Dedicação estimada |
 |---|---|
-| Gerente de projeto | 320 h |
-| Tech lead / arquiteto | 450 h |
-| Desenvolvedores full-stack (2) | 1.400 h |
-| Designer UX/UI | 350 h |
-| Analista de testes (QA) e acessibilidade | 300 h |
-| DevOps / infraestrutura | 158 h |
-| **Total** | **2.978 h** |
+| Gerente de projeto | 245 h |
+| Tech lead / arquiteto | 420 h |
+| Desenvolvedores full-stack (2) | 1.270 h |
+| Designer UX/UI | 300 h |
+| Analista de testes (QA) e acessibilidade | 290 h |
+| DevOps / infraestrutura | 170 h |
+| **Total** | **2.695 h** |
 
 - **Método:** entregas incrementais em sprints de 2 semanas, com ambiente de homologação atualizado e demonstrações quinzenais à FBA.
 - **Valor-hora:** único (*blended*) de **R$ 160,00** para todos os perfis.
+- **Produtividade:** as estimativas consideram o uso de recursos nativos do Django e do Wagtail (painel administrativo, CMS, permissões, versionamento e auditoria) e de bibliotecas prontas para formulários, mapas e gráficos. Isso reduz o esforço de desenvolvimento sem reduzir o escopo.
 - **Execução:** todo o desenvolvimento é feito por equipe própria da NatGED. Os únicos serviços contratados de terceiros são os de nuvem e e-mail, listados na seção 7.
 
 ---
@@ -79,52 +80,52 @@ As horas de cada componente já incluem a parcela proporcional de gestão do pro
 
 | Nº | Componente | Horas | Valor (R$) |
 |---:|---|---:|---:|
-| 1 | Levantamento e arquitetura da informação | 134 | 21.440,00 |
-| 2 | UX/UI e protótipo | 269 | 43.040,00 |
-| 3 | Desenvolvimento do portal público | 224 | 35.840,00 |
-| 4 | Área restrita das organizações ¹ | 246 | 39.360,00 |
-| 5 | Painel administrativo ² | 246 | 39.360,00 |
-| 6 | Banco de dados | 90 | 14.400,00 |
-| 7 | Módulo de projetos e eventos ³ | 224 | 35.840,00 |
-| 8 | Calendário | 67 | 10.720,00 |
-| 9 | Mapa e georreferenciamento | 112 | 17.920,00 |
-| 10 | Indicadores e dashboards | 224 | 35.840,00 |
-| 11 | Relatórios e exportações (inclui API) | 179 | 28.640,00 |
-| 12 | Formulários e pesquisas | 269 | 43.040,00 |
-| 13 | LGPD, segurança e logs | 157 | 25.120,00 |
-| 14 | Acessibilidade digital | 112 | 17.920,00 |
-| 15 | Testes e homologação | 224 | 35.840,00 |
-| 16 | Documentação e treinamento | 134 | 21.440,00 |
-| 17 | Implantação ⁴ | 67 | 16.720,00 |
-| | **Subtotal — desenvolvimento e implantação** | **2.978** | **482.480,00** |
+| 1 | Levantamento e arquitetura da informação | 132 | 21.120,00 |
+| 2 | UX/UI e protótipo | 220 | 35.200,00 |
+| 3 | Desenvolvimento do portal público | 198 | 31.680,00 |
+| 4 | Área restrita das organizações ¹ | 231 | 36.960,00 |
+| 5 | Painel administrativo ² | 231 | 36.960,00 |
+| 6 | Banco de dados | 88 | 14.080,00 |
+| 7 | Módulo de projetos e eventos ³ | 198 | 31.680,00 |
+| 8 | Calendário | 66 | 10.560,00 |
+| 9 | Mapa e georreferenciamento | 110 | 17.600,00 |
+| 10 | Indicadores e dashboards | 198 | 31.680,00 |
+| 11 | Relatórios e exportações (inclui API) | 154 | 24.640,00 |
+| 12 | Formulários e pesquisas | 220 | 35.200,00 |
+| 13 | LGPD, segurança e logs | 154 | 24.640,00 |
+| 14 | Acessibilidade digital | 110 | 17.600,00 |
+| 15 | Testes e homologação | 198 | 31.680,00 |
+| 16 | Documentação e treinamento | 121 | 19.360,00 |
+| 17 | Implantação ⁴ | 66 | 16.560,00 |
+| | **Subtotal — desenvolvimento e implantação** | **2.695** | **437.200,00** |
 
 ¹ Inclui cadastro de organizações e gestão de evidências (itens do TR sem linha própria na tabela).
 ² Inclui workflow de validação, notificações por e-mail, gestão de usuários e parâmetros.
 ³ Inclui atividades, capacitações e perfil de mobilidade.
-⁴ 67 h (R$ 10.720,00) + R$ 6.000,00 de infraestrutura de homologação durante o desenvolvimento (6 meses).
+⁴ 66 h (R$ 10.560,00) + R$ 6.000,00 de infraestrutura de homologação durante o desenvolvimento (6 meses).
 
 ### 5.2 Operação por 24 meses (valores recorrentes)
 
 | Nº | Componente | Valor mensal (R$) | Meses | Valor total (R$) |
 |---:|---|---:|---:|---:|
-| 18 | Hospedagem cloud — 24 meses | 1.500,00 | 24 | 36.000,00 |
-| 19 | Backup e segurança — 24 meses | 800,00 | 24 | 19.200,00 |
-| 20 | Suporte e manutenção — 24 meses | 3.200,00 | 24 | 76.800,00 |
-| | **Subtotal — operação** | **5.500,00** | | **132.000,00** |
+| 18 | Hospedagem cloud — 24 meses | 1.300,00 | 24 | 31.200,00 |
+| 19 | Backup e segurança — 24 meses | 640,00 | 24 | 15.360,00 |
+| 20 | Suporte e manutenção — 24 meses | 2.400,00 | 24 | 57.600,00 |
+| | **Subtotal — operação** | **4.340,00** | | **104.160,00** |
 
 ### 5.3 Total
 
 | Grupo | Valor (R$) |
 |---|---:|
-| Desenvolvimento e implantação (itens 1–17) | 482.480,00 |
-| Operação por 24 meses (itens 18–20) | 132.000,00 |
-| **TOTAL** | **614.480,00** |
+| Desenvolvimento e implantação (itens 1–17) | 437.200,00 |
+| Operação por 24 meses (itens 18–20) | 104.160,00 |
+| **TOTAL** | **541.360,00** |
 
-**Valor total: R$ 614.480,00** (seiscentos e quatorze mil, quatrocentos e oitenta reais).
+**Valor total: R$ 541.360,00** (quinhentos e quarenta e um mil, trezentos e sessenta reais).
 
 ### 5.4 Composição dos itens recorrentes
 
-**Item 18 — Hospedagem cloud (R$ 1.500,00/mês)**
+**Item 18 — Hospedagem cloud (R$ 1.300,00/mês)**
 
 - Ambiente de produção: 2 containers de aplicação, 1 worker, PostgreSQL gerenciado, Redis, storage de objetos (≥ 10 GB, elástico), balanceador HTTPS e CDN/WAF.
 - Ambiente de homologação reduzido.
@@ -132,18 +133,18 @@ As horas de cada componente já incluem a parcela proporcional de gestão do pro
 - Custo de nuvem repassado mais a administração da infraestrutura.
 - Contas abertas em nome da FBA Global.
 
-**Item 19 — Backup e segurança (R$ 800,00/mês)**
+**Item 19 — Backup e segurança (R$ 640,00/mês)**
 
 - Backup diário do banco e dos arquivos, com retenção de 30 dias diários e 12 mensais, em conta/região separada e criptografado.
 - Monitoramento 24×7 de disponibilidade e erros.
 - Aplicação mensal de atualizações de segurança (críticas em até 72 h) e varredura de vulnerabilidades.
 - Teste semestral de restauração.
 - Relatório mensal.
-- Inclui 4 h/mês de atividades técnicas.
+- Inclui 3 h/mês de atividades técnicas.
 
-**Item 20 — Suporte e manutenção (R$ 3.200,00/mês)**
+**Item 20 — Suporte e manutenção (R$ 2.400,00/mês)**
 
-- Franquia de **20 h/mês** para atendimento a usuários e à equipe FBA, manutenção corretiva fora da garantia, pequenos ajustes, apoio operacional e atualização de versões de frameworks.
+- Franquia de **15 h/mês** para atendimento a usuários e à equipe FBA, manutenção corretiva fora da garantia, pequenos ajustes, apoio operacional e atualização de versões de frameworks.
 - Horas não utilizadas acumulam dentro do trimestre.
 - Horas excedentes: R$ 160,00/h, mediante aprovação prévia.
 - SLA conforme a seção 9.
@@ -176,7 +177,7 @@ Estes serviços não fazem parte do total e podem ser contratados a qualquer mom
 |---|---|---|---|---|---|
 | Desenvolvimento, testes, documentação e treinamento | Próprio | NatGED | Conforme itens 1–17 | Único | Itens 1–17 |
 | Suporte, manutenção e operação | Próprio | NatGED | Conforme itens 19–20 | Mensal | Itens 19–20 |
-| Computação, banco, storage, balanceador | Contratado em nuvem | AWS (região São Paulo) ou equivalente | Até R$ 1.300,00/mês | Mensal | Item 18 |
+| Computação, banco, storage, balanceador | Contratado em nuvem | AWS (região São Paulo) ou equivalente | Até R$ 1.100,00/mês | Mensal | Item 18 |
 | CDN / WAF | Contratado em nuvem | Cloudflare | R$ 0 a R$ 120,00/mês | Mensal | Item 18 |
 | E-mail transacional | Contratado em nuvem | Amazon SES ou Brevo | Até R$ 80,00/mês | Mensal | Item 18 |
 | Monitoramento de erros | Contratado em nuvem | Sentry | R$ 0 (plano gratuito) | Mensal | Item 19 |
@@ -237,21 +238,21 @@ O cronograma depende do cumprimento dos prazos da FBA Global (seção 12). Atras
 
 ## 10. Condições de pagamento
 
-### 10.1 Desenvolvimento e implantação (R$ 482.480,00), por marcos
+### 10.1 Desenvolvimento e implantação (R$ 437.200,00), por marcos
 
 | Marco | % | Valor (R$) |
 |---|---:|---:|
-| Assinatura do contrato | 10% | 48.248,00 |
-| Aceite dos requisitos e homologação do protótipo (semana 8) | 15% | 72.372,00 |
-| Entrega da versão base (semana 15) | 20% | 96.496,00 |
-| Entrega funcional completa (semana 20) | 20% | 96.496,00 |
-| Versão homologável aceita (semana 22) | 20% | 96.496,00 |
-| Aceite definitivo (semana 24) | 15% | 72.372,00 |
-| **Total** | **100%** | **482.480,00** |
+| Assinatura do contrato | 10% | 43.720,00 |
+| Aceite dos requisitos e homologação do protótipo (semana 8) | 15% | 65.580,00 |
+| Entrega da versão base (semana 15) | 20% | 87.440,00 |
+| Entrega funcional completa (semana 20) | 20% | 87.440,00 |
+| Versão homologável aceita (semana 22) | 20% | 87.440,00 |
+| Aceite definitivo (semana 24) | 15% | 65.580,00 |
+| **Total** | **100%** | **437.200,00** |
 
 ### 10.2 Operação (itens 18 a 20)
 
-Mensalidade de **R$ 5.500,00**, com faturamento mensal a partir do mês seguinte à implantação em produção.
+Mensalidade de **R$ 4.340,00**, com faturamento mensal a partir do mês seguinte à implantação em produção.
 
 ### 10.3 Condições gerais
 
@@ -274,7 +275,7 @@ As premissas técnicas completas (P-01 a P-19) estão no documento de Requisitos
 6. **Carga de dados:** somente por planilha-modelo de organizações. Migração de bases legadas é o opcional O-05.
 7. **Treinamentos:** 2 turmas de 3 h, remotas e gravadas.
 8. **Contas:** contas de nuvem, domínio e repositório de código em nome da FBA Global.
-9. **Prazo da operação:** 24 meses de operação contados da implantação em produção. Se a FBA entender que os 24 meses se contam desde a assinatura do contrato (TR §17), os itens 18 a 20 passam a 18 meses, totalizando **R$ 99.000,00**.
+9. **Prazo da operação:** 24 meses de operação contados da implantação em produção. Se a FBA entender que os 24 meses se contam desde a assinatura do contrato (TR §17), os itens 18 a 20 passam a 18 meses, totalizando **R$ 78.120,00**.
 
 ## 12. Dependências da FBA Global
 
@@ -329,7 +330,7 @@ As premissas técnicas completas (P-01 a P-19) estão no documento de Requisitos
 | Licenças ou APIs com custo recorrente | Nenhuma licença de software. Recorrentes apenas os serviços de nuvem (item 18). API de mapas sem custo |
 | Prazo de garantia | 24 meses após o aceite definitivo |
 | SLA de suporte | Crítico 2 h / 8 h; Alto 4 h / 2 d; Médio 1 d / 5 d; Baixo 2 d / próxima versão (seção 9.2) |
-| Condições de pagamento | Desenvolvimento em 6 marcos (10/15/20/20/20/15%); operação mensal de R$ 5.500,00; pagamento em 15 dias da NF |
+| Condições de pagamento | Desenvolvimento em 6 marcos (10/15/20/20/20/15%); operação mensal de R$ 4.340,00; pagamento em 15 dias da NF |
 | Observações | Proposta integral ao escopo do TR, com premissas na seção 11 e opcionais na seção 6. Documento de Requisitos Refinados anexo |
 
 ---
