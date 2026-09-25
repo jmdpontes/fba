@@ -305,6 +305,7 @@ As premissas técnicas completas (P-01 a P-19) estão no documento de Requisitos
 | 13 | Mapa e georreferenciamento | Item 9 | 26 | Período de garantia | Seção 9.1 (sem custo) |
 
 **Limitações técnicas declaradas (TR §18):**
+
 - A geocodificação automática por OpenStreetMap pode ter precisão menor em áreas rurais ou periféricas. Por isso existe o ajuste manual do pino.
 - Tiles gratuitos seguem política de uso justo. Se o tráfego crescer muito, pode ser necessário um servidor de tiles próprio (estimado em R$ 150,00/mês).
 
